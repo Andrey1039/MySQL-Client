@@ -442,7 +442,7 @@ namespace Database
         private void ProgramWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (dbcon != null)
-                dbcon.Clone();
+                dbcon.Close();
         }
     }
 }
